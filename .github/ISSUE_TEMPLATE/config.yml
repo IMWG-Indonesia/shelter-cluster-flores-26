@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Diskusi cepat di WhatsApp
+    url: TAUTAN-GRUP-WA-SHELTER
+    about: Untuk tanya-jawab dan koordinasi harian Sub-Klaster Shelter. Kalau sudah jadi kebutuhan yang jelas, tuliskan sebagai tugas di sini.
+  - name: Cara kerja papan tugas
+    url: https://github.com/IMWG-Indonesia/shelter-cluster-flores-26/blob/main/CARA-KERJA.md
+    about: Triase harian, pengisian field, dan format pengumuman ke WhatsApp. Untuk koordinator dan petugas piket.
+  - name: Panduan kontributor
+    url: https://github.com/IMWG-Indonesia/shelter-cluster-flores-26/blob/main/README.md
+    about: Cara mengambil tugas, arti label, alur papan, dan aturan data sensitif.
+  - name: Papan tugas lintas klaster GEMPA-NTT-26
+    url: https://github.com/orgs/IMWG-Indonesia/projects/5/views/1
+    about: Untuk produk yang tidak khusus shelter, misalnya peta dasar, data kependudukan, atau laporan situasi gabungan.

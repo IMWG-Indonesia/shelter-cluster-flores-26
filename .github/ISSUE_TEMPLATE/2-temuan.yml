@@ -1,0 +1,65 @@
+name: Temuan
+description: Sesuatu yang ditemukan dan perlu dicatat, tapi belum diputuskan jadi pekerjaan
+type: Finding
+title: "[Temuan] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gunakan ini untuk mencatat hal yang muncul di luar tugas yang sedang dikerjakan:
+        lembaga yang ternyata membangun hunian tapi tidak pernah masuk 5W, angka unit yang
+        tidak cocok antara 5W dan laporan lembaga, desa yang tidak muncul di data mana pun,
+        atau daftar aktivitas yang ternyata tidak menampung praktik di lapangan.
+
+        **Catat dulu, triase belakangan.** Tidak perlu tahu solusinya untuk membuat tugas ini.
+
+  - type: textarea
+    id: temuan
+    attributes:
+      label: Apa yang ditemukan
+      description: Tulis apa yang terlihat, bukan dugaan penyebabnya.
+      placeholder: |
+        Ada lembaga yang menyalurkan bantuan sewa rumah di dua kecamatan, tetapi
+        aktivitas itu tidak ada padanannya di daftar jenis bantuan pada matriks 5W.
+    validations:
+      required: true
+
+  - type: textarea
+    id: bukti
+    attributes:
+      label: Dari mana
+      description: Tautan, tangkapan layar, nama berkas, atau tanggal dan sumber percakapan.
+    validations:
+      required: true
+
+  - type: textarea
+    id: dampak
+    attributes:
+      label: Kenapa ini perlu diperhatikan
+      description: Apa yang bisa keliru kalau temuan ini dibiarkan. Kalau belum tahu, tulis `belum diketahui`.
+      placeholder: |
+        Aktivitas itu akan dicatat sebagai "lainnya" atau tidak dilaporkan sama sekali,
+        sehingga cakupan bantuan sewa tidak akan terlihat pada analisis kesenjangan.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: usulan
+    attributes:
+      label: Usulan tindak lanjut
+      options:
+        - Perlu dibuatkan tugas tersendiri
+        - Cukup dicatat sebagai konteks
+        - Perlu ditanyakan ke pemilik data atau lembaga pelaksana
+        - Perlu dibawa ke pertemuan sub-klaster
+        - Belum tahu, minta pendapat
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        Tugas temuan tidak perlu tenggat. Yang perlu dilengkapi hanya label
+        `bidang:` dan `wilayah:`.

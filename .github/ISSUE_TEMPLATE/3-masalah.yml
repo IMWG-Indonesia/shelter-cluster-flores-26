@@ -1,0 +1,76 @@
+name: Masalah Produk atau Data
+description: Ada yang keliru pada produk atau data yang sudah terlanjur beredar
+type: Incident
+title: "[Masalah] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gunakan ini kalau ada yang sudah keluar dan ternyata bermasalah:
+        angka unit hunian yang salah pada produk yang sudah dipakai rapat, daftar penerima
+        ikut terbawa ke berkas yang disebar, peta dengan kabupaten yang tertukar, atau
+        berkas 5W bersama yang mendadak tidak bisa diakses.
+
+        **Ini bukan tempat menyalahkan siapa pun.** Yang dicari adalah apa yang sudah
+        terlanjur beredar dan bagaimana menghentikan dampaknya.
+
+  - type: textarea
+    id: kejadian
+    attributes:
+      label: Apa yang terjadi
+      description: Tulis apa yang terlihat, bukan dugaan penyebabnya.
+    validations:
+      required: true
+
+  - type: input
+    id: sejak
+    attributes:
+      label: Sejak kapan
+      description: Perkiraan waktu produk atau data bermasalah itu mulai beredar.
+      placeholder: 8 September 2026, sekitar sore
+    validations:
+      required: true
+
+  - type: textarea
+    id: sebaran
+    attributes:
+      label: Sudah sampai mana beredarnya
+      description: |
+        Siapa yang kemungkinan sudah memakainya, dan di forum apa.
+        Ini yang menentukan seberapa cepat perlu ditarik atau diralat.
+      placeholder: |
+        Sudah dibagikan di grup Sub-Klaster Shelter dan dipakai sebagai lampiran
+        pada pertemuan Klaster Pengungsian dan Perlindungan.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kategori
+    attributes:
+      label: Jenis masalah
+      options:
+        - Angka atau data keliru
+        - Data pribadi atau daftar penerima ikut terbawa
+        - Wilayah atau geometri keliru
+        - Sumber data tidak bisa diakses
+        - Produk dipakai di luar konteksnya
+        - Lainnya
+    validations:
+      required: true
+
+  - type: textarea
+    id: penanganan
+    attributes:
+      label: Sudah dilakukan apa
+      description: Kalau belum ada, tulis `belum ada`.
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        Tugas jenis ini otomatis jadi antrean koordinator. Kalau menyangkut data pribadi
+        atau daftar penerima, tambahkan label `tanda:sensitif` dan segera kabari koordinator
+        lewat WhatsApp. Jangan menunggu tugas ini dibaca.
