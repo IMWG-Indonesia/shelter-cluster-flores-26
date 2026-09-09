@@ -1,0 +1,128 @@
+name: Tugas IM Shelter
+description: Permintaan produk informasi yang sudah jelas keluarannya
+type: Task
+title: "[Sebutkan produknya secara ringkas]"
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Satu tugas = satu kebutuhan = satu keluaran. Kalau kebutuhannya besar, pecah jadi beberapa tugas.
+
+        **Prioritas dan perkiraan waktu tidak diisi di sini.** Keduanya diatur di panel kanan
+        setelah tugas dibuat, supaya bisa disortir dan difilter.
+
+  - type: textarea
+    id: pekerjaan
+    attributes:
+      label: Pekerjaan
+      description: Satu kalimat, apa yang dikerjakan.
+      placeholder: Peta cakupan intervensi hunian sementara per kecamatan di tujuh kabupaten terdampak.
+    validations:
+      required: true
+
+  - type: textarea
+    id: tujuan
+    attributes:
+      label: Tujuan
+      description: Masalah konkret apa yang sedang ditutup, dan keputusan apa yang mau dibantu. Bukan manfaat umum.
+      placeholder: |
+        Pertemuan sub-klaster belum punya gambaran wilayah mana yang belum tersentuh
+        intervensi hunian, sehingga pembagian wilayah antar lembaga masih ditentukan
+        berdasarkan perkiraan.
+    validations:
+      required: true
+
+  - type: textarea
+    id: hasil
+    attributes:
+      label: Hasil
+      description: Daftar keluaran yang bisa diperiksa. Sedetail mungkin. Sebutkan apa yang harus terlihat atau terjawab di dalamnya.
+      placeholder: |
+        - Sebaran jumlah KK yang sudah menerima intervensi hunian per kecamatan
+        - Kecamatan tanpa intervensi ditandai terpisah, bukan dibiarkan kosong
+        - Pembedaan hunian darurat, hunian sementara, dan hunian tetap
+        - Legenda, arah utara, skala, sumber data, tanggal data
+    validations:
+      required: true
+
+  - type: textarea
+    id: selesai-bila
+    attributes:
+      label: Selesai bila
+      description: |
+        Kriteria yang bisa dicek sendiri oleh pengerja tanpa bertanya balik ke pemohon.
+        Kriteria terbaik memaksa pemeriksaan oleh orang lain.
+      placeholder: |
+        - Setiap angka pada peta bisa ditelusuri ke baris 5W-nya oleh orang yang tidak membuatnya
+        - Satu orang di luar pembuat sudah membaca peta dan bisa menyebutkan tiga kecamatan
+          dengan kesenjangan terbesar tanpa penjelasan lisan
+    validations:
+      required: true
+
+  - type: textarea
+    id: format
+    attributes:
+      label: Format dan tempat simpan
+      description: Wujud berkasnya, dan di folder mana hasilnya diunggah.
+      placeholder: |
+        PNG dan PDF ukuran A3, diunggah ke folder kerja bersama /produk/peta/
+    validations:
+      required: true
+
+  - type: textarea
+    id: sumber-data
+    attributes:
+      label: Sumber data
+      description: |
+        Tautan atau nama berkas. Kalau datanya belum ada, tulis `belum tersedia`,
+        jangan dikosongkan, supaya terbaca sebagai bagian dari pekerjaan.
+      placeholder: |
+        - Matriks 5W Sub-Klaster Shelter, periode terakhir: (tautan)
+        - Daftar desa tujuh kabupaten beserta kode wilayah: (tautan folder kerja bersama)
+        - Batas administrasi kecamatan: lihat tugas di papan lintas klaster
+        - Jumlah rumah rusak per kecamatan: belum tersedia
+    validations:
+      required: true
+
+  - type: input
+    id: diminta-oleh
+    attributes:
+      label: Diminta oleh
+      description: Nama unit yang membutuhkan, bukan nama yang mengerjakan.
+      placeholder: Focal point Sub-Klaster Shelter
+    validations:
+      required: true
+
+  - type: input
+    id: asal-permintaan
+    attributes:
+      label: Asal permintaan
+      description: |
+        Dari percakapan mana dan tanggal berapa permintaan ini muncul.
+        Kosongkan kalau permintaannya memang lahir di papan ini.
+      placeholder: Pertemuan Sub-Klaster Shelter, 4 September 2026
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: tata-kelola
+    attributes:
+      label: Tata kelola data
+      description: Dicentang oleh pengerja sebelum tugas dipindah ke Review.
+      options:
+        - label: Sumber data dicantumkan pada produk
+        - label: Tanggal data (as-of) dan periode 5W dicantumkan
+        - label: Tingkat keyakinan disebutkan untuk bagian yang belum terverifikasi
+        - label: Tidak memuat data pribadi atau daftar penerima pada keluaran yang beredar luas
+        - label: Data 5W mentah tidak ditempel di komentar, hanya tautannya
+        - label: Berkas hasil sudah diunggah, tautannya ditempel di komentar
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        Setelah tugas dibuat, mohon lengkapi **tanggal dibutuhkan** di panel kanan.
+
+        Perkiraan waktu, tingkat prioritas, dan label akan dilengkapi oleh petugas piket
+        saat menyisir Permintaan Masuk. Tidak perlu Anda isi sendiri.
