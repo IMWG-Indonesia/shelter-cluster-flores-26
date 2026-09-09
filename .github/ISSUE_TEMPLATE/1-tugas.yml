@@ -1,7 +1,6 @@
 name: Tugas IM Shelter
 description: Permintaan produk informasi yang sudah jelas keluarannya
 type: Task
-title: "[Sebutkan produknya secara ringkas]"
 labels: []
 body:
   - type: markdown
