@@ -7,8 +7,6 @@ Papan tugas Information Management untuk Sub-Klaster Shelter pada respons gempa 
 | **Papan tugas** | [Buka papan](https://github.com/orgs/IMWG-Indonesia/projects/6/views/1) |
 | **Folder kerja bersama** | [Google Drive](https://drive.google.com/drive/folders/1Imi6XCstvQe7jcP4ucDtZRSvBq_Uj2GG?usp=sharing), akses lewat undangan |
 | **Koordinasi harian** | Grup WhatsApp Sub-Klaster Shelter, lewat undangan `[tautan menyusul]` |
-| **Papan lintas klaster** | [GEMPA-NTT-26](https://github.com/orgs/IMWG-Indonesia/projects/5/views/1) |
-
 
 ## Mulai dari sini
 
